@@ -6,6 +6,5 @@
         int GetPosition(Token token);
         void SetPosition(Token token, int position);
         void Move(Token token, int spaces);
-        bool HasWon(Token token);
     }
 }

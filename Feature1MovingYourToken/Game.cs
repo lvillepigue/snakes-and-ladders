@@ -24,10 +24,5 @@
             if (token.Position > 100)
                 token.Position = oldPosition;
         }
-
-        public bool HasWon(Token token)
-        {
-            return token.Position == 100;
-        }
     }
 }
