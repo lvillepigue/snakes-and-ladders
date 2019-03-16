@@ -5,16 +5,16 @@ namespace Navico.SnakesAndLadders.Feature1MovingYourToken
     [TestClass]
     public class GameTests
     {
-        private IGame2 _game;
-        private IGame _tokenMover;
+        private IGame _game;
+        private ITokenMover _tokenMover;
         private Token _token;
 
         [TestInitialize]
         public void Init()
         {
             _token = new Token();
-            _tokenMover = new Game();
-            _game = new Game2();
+            _tokenMover = new TokenMover();
+            _game = new Game();
         }
 
         [TestMethod]
@@ -62,8 +62,9 @@ namespace Navico.SnakesAndLadders.Feature1MovingYourToken
         [TestCleanup]
         public void Cleanup()
         {
-            _tokenMover = null;
             _token = null;
+            _tokenMover = null;
+            _game = null;
         }
     }
 }

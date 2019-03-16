@@ -42,10 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="TokenMover.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="Game2.cs" />
+    <Compile Include="ITokenMover.cs" />
     <Compile Include="IGame.cs" />
-    <Compile Include="IGame2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Token.cs" />
   </ItemGroup>
