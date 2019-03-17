@@ -5,7 +5,6 @@ namespace Navico.SnakesAndLadders.Feature1MovingYourToken
     [TestClass]
     public class TokenMoverTests
     {
-        private IGame _game;
         private ITokenMover _tokenMover;
         private Token _token;
 
@@ -14,7 +13,6 @@ namespace Navico.SnakesAndLadders.Feature1MovingYourToken
         {
             _token = new Token();
             _tokenMover = new TokenMover();
-            _game = new Game();
         }
 
         [TestMethod]
@@ -47,7 +45,6 @@ namespace Navico.SnakesAndLadders.Feature1MovingYourToken
             _tokenMover.SetPosition(_token, 97);
             _tokenMover.Move(_token, 3);
             Assert.AreEqual(Constants.LastPosition, _tokenMover.GetPosition(_token));
-            Assert.IsTrue(_game.HasWon(_token));
         }
 
         [TestMethod]
@@ -56,7 +53,6 @@ namespace Navico.SnakesAndLadders.Feature1MovingYourToken
             _tokenMover.SetPosition(_token, 97);
             _tokenMover.Move(_token, 4);
             Assert.AreEqual(97, _tokenMover.GetPosition(_token));
-            Assert.IsFalse(_game.HasWon(_token));
         }
 
         [TestCleanup]
@@ -64,7 +60,6 @@ namespace Navico.SnakesAndLadders.Feature1MovingYourToken
         {
             _token = null;
             _tokenMover = null;
-            _game = null;
         }
     }
 }
