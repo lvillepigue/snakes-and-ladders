@@ -3,7 +3,7 @@
 namespace Navico.SnakesAndLadders.Feature1MovingYourToken
 {
     [TestClass]
-    public class GameTests
+    public class TokenMoverTests
     {
         private IGame _game;
         private ITokenMover _tokenMover;

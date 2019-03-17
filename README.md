@@ -45,7 +45,8 @@ The completion of the exercise follows the principles of Test Driven Development
 1. Write the implementation code in .NET library to make the tests pass
 
 
-## 3. Alternatives considered
+## 3. Key decisions and alternatives considered
+   1. The Die class is not unit tested as it only returns the result of Math.Random
    1. Game started or not started determined by a boolean property of the Game object or just by the existence of the Game object. The existence of a Game object is chosen for reason of simplicity and no requirements to have.
    1. Use another Unit Test framework. The Microsoft Unit Test Framework may not be the most feature full or the one executing the test the fastest but it does not require additional tooling to run the tests. It is integrated in Visual Studio Community.
    1. Use a mocking framework or just manually mock with C# code: since the exercise is simple and does not contain the many test cases, the manual approch is selected.
