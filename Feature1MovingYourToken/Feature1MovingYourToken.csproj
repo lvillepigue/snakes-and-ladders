@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Die.cs" />
+    <Compile Include="IDie.cs" />
     <Compile Include="TokenMover.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="ITokenMover.cs" />
