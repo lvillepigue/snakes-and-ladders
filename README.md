@@ -2,7 +2,7 @@
 
 
 ## 1. Approach
-The completion of the exercise follows the principles of Test Driven Development where unit tests are written before implementation of user stories. It also follows SOLID principles. Unit test cases are specified by the user stories written in `Feature 1 - Moving Your Token`
+The completion of the exercise follows the principles of Test Driven Development where unit tests are written before implementation of user stories. It also follows SOLID principles. Refactoring is performed when the code is departing from these principles. Unit test cases are specified by the user stories written in `Feature 1 - Moving Your Token`
 
 1. Read `Feature 1` to identify the business domain glossary: the potential objects (state only), services, statuses, actions and user stories outlined in `Feature 1`
 	1. Objects and services
@@ -53,7 +53,14 @@ The completion of the exercise follows the principles of Test Driven Development
 
  
 ## 4. Running the code
-Because this is only the feature 1 of the game and user interface or web services are not part of the scope, the best way to run the code is by running its corresponding unit tests. In Visual Studio select menu `Test` => menu item `Windows` then menu item `Test Explorer`. In the Test explorer pane click on `Run All`. This will run all the tests and indicate which ones pass or fail.
+Because this is only the feature 1 of the game and user interface or web services are not part of the scope, the best way to run the code is by running its corresponding unit tests.
+
+Steps: 
+ 1. open solution file `SnakesAndLadders.sln` in Visual Studio 2017
+ 1. select menu `Test` 
+ 1. then menu item `Windows` 
+ 1. and finally menu item `Test Explorer`. 
+ 1. in the Test explorer pane click on `Run All`. This will run all the tests and indicate which ones pass or fail.
 
 
 ## 5. Evolving the solution
