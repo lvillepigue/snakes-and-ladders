@@ -57,3 +57,4 @@ Because this is only the feature 1 of the game and user interface or web service
 
 
 ## 5. Evolving the solution
+A token landing on snakes or ladders as described in `Feature 2` is transfered to the other side of the snake or ladder regardless of the number yielded by the die. Unit tests already written for `Feature 1` should still pass as `Feature 1` is still part of the rules of the game. Implementing `Feature 2` will require decoupling `TokenMover` from the new code that implements `Feature 2`. This change will respect the Single Responsibility and Open-Closed principles where `TokenMover` will not contain code that implements `Feature 2` will not know about it. Instead another class will call the unmodified `TokenMover` then the class responsible for the snakes and the ladders.
